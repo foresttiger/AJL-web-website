@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="js/lib/layui-v2.2.5/css/layui.css">
     <!-- <link rel="stylesheet" type="text/css" href="js/lib/layer-v2.3/layer.less"> -->
     <link rel="stylesheet" type="text/css" href="css/global.css">
-    <link rel="stylesheet" type="text/css" href="css/product.css">
+    <link rel="stylesheet" type="text/css" href="css/quote.css">
     <script>
     function is_mobile() {
         var regex_match = /(nokia|iphone|android|motorola|^mot-|softbank|foma|docomo|kddi|up.browser|up.link|htc|dopod|blazer|netfront|helio|hosin|huawei|novarra|CoolPad|webos|techfaith|palmsource|blackberry|alcatel|amoi|ktouch|nexian|samsung|^sam-|s[cg]h|^lge|ericsson|philips|sagem|wellcom|bunjalloo|maui|symbian|smartphone|midp|wap|phone|windows ce|iemobile|^spice|^bird|^zte-|longcos|pantech|gionee|^sie-|portalmmm|jigs browser|hiptop|^benq|haier|^lct|operas*mobi|opera*mini|320x320|240x320|176x220)/i;
@@ -63,18 +63,119 @@
         </div>
         <nav class="menu">
             <ul>
-                <li><a href="" title="">首页</a></li>
-                <li class="menu_index"><a href="" title="">产品服务</a></li>
-                <li><a href="" title="">科技筑家</a></li>
+                <li><a href="index.html" title="">首页</a></li>
+                <li><a href="technology.html" title="">科技筑家</a></li>
+                <li><a href="product.html" title="">产品服务</a></li>
                 <!-- <li><a href="" title="">个性定制</a></li> -->
-                <li><a href="" title="">精选案例</a></li>
-                <li><a href="" title="">预约装修</a></li>
-                <li><a href="" title="">关于我们</a></li>
+                <li><a href="scheme.html" title="">精选案例</a></li>
+                <li class="menu_index"><a href="quote.html" title="">预约装修</a></li>
+                <li><a href="aboutUs.html" title="">关于我们</a></li>
             </ul>
         </nav>
     </header>
-    <section class="containter product">
-        <div class="banner"></div>
+    <section class="containter quote">
+        <div class="banner">
+            <div class="p-top">
+                <div class="p-t-img"></div>
+                <div class="p-t-tile">
+                    <h1>我加装修多少钱</h1>
+                    <p>[快速出报价 装修预算发到手机]</p>
+                </div>
+            </div>
+            <div class="c-5-c">
+                <div class="c-5-content">
+                    <div class="c-5-title">
+                        装修计算器
+                    </div>
+                    <div class="c-5-calculator">
+                        <!-- <p>装修计算器</p> -->
+                        <div class="form">
+                            <!--  <div class="select">
+                            <select name="" disabled="disabled" >
+                                <option value="">桂林市</option>
+                            </select>
+                            <select name="">
+                                <option value="">七星区</option>
+                                <option value="">临桂区</option>
+                                <option value="">秀峰区</option>
+                            </select>
+                        </div> -->
+                            <input type="text" name="cellname" placeholder="您的小区名" alt="小区名">
+                            <div class="area">
+                                <input type="text" name="area" id="area" placeholder="您的房屋面积" alt="面积">
+                            </div>
+                            <div class="select">
+                                <select id="select1">
+                                    <option value="四室二厅">四室二厅</option>
+                                    <option value="四室一厅">四室一厅</option>
+                                    <option value="三室二厅">三室二厅</option>
+                                    <option value="三室一厅">三室一厅</option>
+                                    <option value="二室二厅">二室二厅</option>
+                                    <option value="二室一厅">二室一厅</option>
+                                    <option value="一室一厅">一室一厅</option>
+                                </select>
+                                <select id="select2">
+                                    <option value="1卫">1卫</option>
+                                    <option value="2卫">2卫</option>
+                                </select>
+                            </div>
+                            <!-- <input type="text" Óname="area" placeholder="您的户型" alt="户型"> -->
+                            <input type="text" name="name" placeholder="您的称呼" alt="姓名">
+                            <input type="number" name="mobilephone" placeholder="您的手机号" alt="手机号">
+                        </div>
+                    </div>
+                    <div class="c-5-price">
+                        <p>我家装修预算<span class="total-money">？</span>元</p>
+                        <div class="c-5-p-c"><span class="jc-name">材料费</span><span class="jc-money">?</span>元</div>
+                        <div class="c-5-p-c"><span class="jc-name">人工费</span><span class="jc-money">?</span>元</div>
+                        <div class="c-5-p-c"><span class="jc-name">设计费</span><span class="jc-money">?</span>元</div>
+                    </div>
+                    <div class="c-5-quotation">
+                        <a class="btn" data-value="2" id="prightSubmit">开始<br>计算</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="p_w">
+            <div class="p_i">
+                <div class="title-type1"><span class="title">安居乐装饰&nbsp;透明家装&nbsp;价格放心</span></div>
+                <div class="price2-list after-clear">
+                    <ul>
+                        <li>报价前置 预算透明</li>
+                        <li>0增项 预算即决算</li>
+                        <li>全包套餐 高性价比</li>
+                        <!-- <li>F2C集采 直省预算</li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="p-w-item">
+            <div class="p-w-i-l">
+                <div class="p-title">报价前置，预算透明</div>
+                <p>套餐报价规范 三步选包 组出新家</p>
+                <div class="p-t-img"></div>
+            </div>
+            <div class="p-w-i-r">
+            </div>
+        </div>
+        <div class="p-w-item p-w-2">
+            <div class="p-w-i-l">
+                <div class="p-title">全包套餐，高性价比</div>
+                <p>装修放心 售后有保障</p>
+                <div class="p-t-img"></div>
+            </div>
+            <div class="p-w-i-r">
+            </div>
+        </div>
+        <div class="p-w-item p-w-3">
+            <div class="p-w-i-r">
+            </div>
+            <div class="p-w-i-l">
+                <div class="p-title">0增项，预算即决算</div>
+                <p>绿色环保主材 品质保证<</p>
+                <div class="p-t-img"></div>
+            </div>
+        </div>
     </section>
     <footer id="footer">
         <div class="f_content">
@@ -128,6 +229,6 @@
         </div>
     </footer>
 </body>
-<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/quote.js" type="text/javascript" charset="utf-8"></script>
 
 </html>
