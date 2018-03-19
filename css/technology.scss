@@ -1,0 +1,65 @@
+.technology {
+    .layui-tab-content {
+        padding: 0;
+    }
+    .layui-tab-brief>.layui-tab-title {
+    	border-color: #ffd501;
+        .layui-this {
+            color: #d1774c;
+            &:after {
+                border-bottom: 2px solid #d1774c;
+            }
+        }
+    }
+    .banner {
+        width: 100%;
+        height: 200px;
+        background: url("../images/technology/banner.jpg") no-repeat 50% #000000;
+    }
+    .content {
+        width: 1200px;
+        margin: 0 auto;
+        min-height: 600px;
+    }
+    .tab-items {
+    	.layui-tab-content{
+    		height:auto;
+    	}
+        .layui-tab-card {
+            border: none;
+            min-height: 600px;
+        }
+        ul {
+            width: 100%;
+            height: 60px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: row;
+            li {
+                width: 33.3%;
+                height: 60px;
+                line-height: 60px; // background-color:red;
+            }
+            .layui-this {
+                width: 33%;
+                color: #ffffff;
+                background-color: #ffd401;
+                &:after {
+                    height: 60px;
+                    border-bottom: 2px solid #ffd401;
+                }
+            }
+        }
+        img {
+            width: 100%;
+        }
+        .smartHome {}
+
+
+
+
+
+        // huanjingxitong-neiyetu.jpg
+    }
+}
