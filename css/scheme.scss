@@ -1,3 +1,193 @@
-.scheme{
-	
+.scheme {
+    background-color: #f2f2f2;
+    .nav {
+        width: 1200px;
+        height: 60px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        margin: 0 auto -10px; // padding-left:30px;
+        a {
+            margin: 0 10px 0 0;
+            padding-left: 15px;
+            font-size: 16px;
+            &:nth-child(2) {
+                padding-left: 10px;
+                ;
+                color: #EAC569
+            }
+        }
+    }
+    .content {
+        width: 1200px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: row;
+        margin: 0 auto;
+        .c-l {
+            margin: 0 20px 50px 0; // padding: 0px 40px;
+            width: 800px;
+            background: #f2f2f2;
+            .layui-tab-card {
+                border: none;
+                box-shadow: none;
+            }
+            img {
+                width: 100%;
+            }
+            .schemeTab {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: row;
+                height: 65px;
+                border: none;
+                background: rgba(255, 255, 255, 0.1); // background-color:rgba(255,255,255,0)
+                li {
+                    padding: 0;
+                    width: 395px;
+                    height: 65px;
+                    line-height: 65px;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    background: #e4e4e4;
+                    color: #454545;
+                    font-weight: bold;
+                    font-size: 18px;
+                    &:after {
+                        border: none;
+                        height: 65px;
+                    }
+                    &.layui-this {
+                        color: #FFFFFF;
+                        background-color: #ffd401
+                    }
+                }
+            }
+            .layui-tab-content {
+                min-height: 600px;
+                box-shadow: none;
+                border: none;
+                background-color: #ffffff; // border: 1px solid #ffd401;
+                box-shadow: 0 2px 5px 0 rgba(255, 212, 1, .5);
+                .scence {
+                    width: 100%;
+                    ul {
+                        width: 100%;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        flex-direction: column;
+                        border-bottom: 1px dashed #ffd401;
+                        padding-bottom: 12px;
+                        li {
+                            width: 100%;
+                            margin: 6px 0 0;
+                            dl {
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: center;
+                                flex-direction: row;
+                                flex-wrap: wrap;
+                                height: 40px;
+                                font-size: 0.16rem;
+                                dt {
+                                    width: 80px;
+                                    text-align: center;
+                                }
+                                dd {
+
+                                    padding: 3px 12px;
+                                    cursor: pointer;
+                                    font-size: 0.14rem;
+                                }
+                                dd.check_This {
+                                    border: 1px solid #ffd401;
+                                    color: #ffd401;
+                                    border-radius: 4px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .schemeGroup {
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+                .schemeGraw {
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    flex-wrap: wrap;
+                    align-content: flex-start;
+                    .item {
+                        display: flex;
+                        align-content: flex-start;
+                        width: 370px;
+                        height: 370px;
+                        background-color: #000000;
+                        margin: 20px 10px 0;
+                    }
+                }
+                .pages {
+                    margin-top: 20px;
+                    display: flex;
+                    justify-content: flex-end;
+                    margin-right: 20px;
+                }
+            }
+        }
+        .c-r {
+            margin: 20px 0 50px;
+            min-height: 600px;
+            background: white;
+            width: 310px;
+            padding: 20px;
+            margin-bottom: 10px;
+            h2 {
+                font-size: 18px;
+                color: #333;
+                margin-bottom: 20px;
+            }
+            ul {
+                li {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    width: 310px;
+                    height: 310px;
+                    background: url(http://static.jtljia.com/images/newcase/tc-bg.png) no-repeat;
+                    background-size: 100% 100%;
+                    margin-bottom: 20px;
+                    position: relative;
+                    cursor: pointer; // padding: 16px;
+                    .img {
+                        img {
+                            width: 279px;
+                            height: 220px;
+                        }
+                    }
+                    .i-title {
+                        font-size: 16px;
+                        color: #333;
+                        margin-bottom: 5px;
+                        margin-top: 5px;
+                    }
+                    p {
+                        color: #999999;
+                        font-size: 12px;
+                        display: -webkit-box;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        -webkit-line-clamp: 1;
+                        -webkit-box-orient: vertical;
+                    }
+                }
+            }
+        }
+    }
 }
